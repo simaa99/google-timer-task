@@ -235,3 +235,23 @@ input::-webkit-inner-spin-button {
   color: var(--icon-color);
   text-transform: capitalize;
 }
+@media screen and (max-width: 1200px) {
+  .timer-section .counter h2 {
+    width: 50%;
+  }
+  .timer-section .counter h2 span {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 978px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .container {
+    width: 95%;
+  }
+}

@@ -35,3 +35,203 @@ a {
   text-decoration: none;
   color: #fff;
 }
+/* Start styling container section */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 3rem auto;
+  row-gap: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Start styling main section */
+main {
+  width: 100%;
+}
+
+/* Start styling Timer/StopWatch section */
+.timer-section {
+  width: 100%;
+  border: 2px solid var(--btn-color);
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.timer-section .switches-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3rem;
+  border-bottom: 2px solid var(--btn-color);
+}
+
+.timer-section .switches-button div {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  margin-bottom: -20px;
+  padding-bottom: 30px;
+  color: var(--icon-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.timer-section .switches-button div:hover {
+  color: #eee;
+}
+
+.timer-section .switches-button div i {
+  padding-right: 0.5rem;
+}
+
+.active {
+  color: #8ab4f8 !important;
+  border-bottom: 2px solid #8ab4f8;
+}
+
+/* Start styling Counter section */
+.timer-section .counter {
+  height: 6rem;
+  font-weight: 400;
+  margin: 1rem;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.timer-section .counter .timer-counter {
+  width: 40%;
+  font-size: 1.5rem;
+  color: #e8eaed;
+  padding: 1rem 0 1rem 1rem;
+  border-bottom: 2px solid var(--btn-color);
+}
+
+.timer-section .counter .timer-counter-input {
+  width: 40%;
+  font-size: 1.5rem;
+  color: #e8eaed;
+  padding: 1rem 0 1rem 1rem;
+  margin-top: 1rem;
+  outline: none;
+  border-bottom: 2px solid #8ab4f8;
+  background-color: var(--bg-color);
+  display: none;
+}
+
+/* remove arrows from number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.timer-section .counter .stop-counter {
+  width: 40%;
+  font-size: 1.5rem;
+  color: #e8eaed;
+  padding: 1rem 0 1rem 1rem;
+  display: none;
+}
+
+.timer-section .counter h2 span {
+  font-size: 3rem;
+}
+
+.stop-mSeconds {
+  font-size: 1.8rem !important;
+}
+
+.timeline {
+  position: absolute;
+  border-bottom: 3px solid #8ab4f8;
+  left: -15px;
+  bottom: -35px;
+  width: 0;
+}
+
+/* Start styling timer footer section */
+.timer-section .timer-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem 1rem;
+  border-top: 2px solid var(--btn-color);
+}
+
+.timer-section .timer-footer .reset-btn {
+  padding: 0.4rem 0.9rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 1px;
+  color: var(--btn-color);
+  background-color: #bdc1c6;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.timer-section .timer-footer .reset-btn:hover {
+  background-color: var(--footer-bg-color);
+}
+
+.timer-section .timer-footer .start-btn {
+  padding: 0.4rem 0.9rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 1px;
+  color: var(--btn-color);
+  background-color: #8ab4f8;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.timer-section .timer-footer .timer-stop-btn {
+  padding: 0.4rem 0.9rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 1px;
+  color: var(--btn-color);
+  background-color: #2960b8;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: none;
+}
+
+.timer-section .timer-footer .start-btn:hover {
+  background-color: #2960b8;
+  color: var(--footer-bg-color);
+}
+
+.timer-section .timer-footer .footer-icons i {
+  color: var(--icon-color);
+  font-size: 1rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+/* Start styling timer feedback section */
+.timer-section .timer-feedback {
+  position: absolute;
+  right: 10px;
+  bottom: -25px;
+}
+
+.timer-section .timer-feedback a {
+  color: var(--icon-color);
+  text-transform: capitalize;
+}
